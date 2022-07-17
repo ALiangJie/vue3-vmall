@@ -1,0 +1,930 @@
+@import "../font/less/font-awesome.less";
+
+// 项目的最外层
+.outer {
+    // 头部
+    &>.header {
+        // 头部的第一行
+        &>.top {
+            background-color: #000;
+            height: 36px;
+            .container {
+                width: 1200px;
+                margin: 0 auto;
+                overflow: hidden;
+
+                // 前半部分
+                .typeList {
+                    float: left;
+                    width: 600px;
+
+                    &>ul {
+                        display: block;
+                        height: 36px;
+
+                        &>li {
+                            padding: 0px 0 0 8px;
+                            float: left;
+                            height: 36px;
+
+                            &.first {
+                                padding: 0;
+                            }
+
+                            &::after {
+                                display: inline-block;
+                                content: '';
+                                width: 1.5px;
+                                height: 10px;
+                                border-radius: 0px;
+                                /**控制形状**/
+                                background-color: #414141;
+                                /**控制图标颜色**/
+                                margin-left: 2px;
+                                padding-right: 0px;
+                                /**图标与文字距离**/
+                            }
+
+                            // &+li {
+                            //     border-left: 1px solid #414141;
+
+                            // }
+                            &>a {
+                                color: #FFFFFF99;
+                                text-decoration: none;
+                                line-height: 36px;
+                                font-size: 12px;
+                                font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+
+                                &:hover {
+                                    color: #fff;
+                                }
+                            }
+
+                            &.end {
+                                display: block;
+                                width: 69px;
+
+                                &::after {
+                                    display: inline-block;
+                                    content: '';
+                                    width: 0px;
+                                    height: 0px;
+                                    border-radius: 0px;
+                                    margin-left: 0px;
+                                    padding-right: 0px;
+                                }
+
+                                &>div {
+                                    &.drop-down-icon {
+                                        &>a {
+                                            line-height: 36px;
+                                            color: #FFFFFF99;
+                                            text-decoration: none;
+                                            font-size: 12px;
+                                            font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+
+                                        }
+
+                                        .fa {
+                                            color: #FFFFFF99;
+                                            font-size: 16px;
+                                        }
+
+                                        &>div {
+                                            display: inline-block;
+                                            position: absolute;
+                                            width: 127px;
+                                            left: 505px;
+                                            padding: 6px 0 12px 0;
+                                            text-align: center;
+                                            line-height: 32px;
+                                            background-color: #fff;
+                                            z-index: 999;
+                                            display: none;
+
+                                            &>dl {
+                                                &>dt {
+                                                    &>a {
+                                                        color: #000;
+                                                        font-size: 12px;
+                                                        font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                                                        text-decoration: none;
+
+                                                        &:hover {
+                                                            text-decoration: none;
+                                                            color: rgb(207, 10, 44);
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+
+                                }
+
+                                &:hover {
+                                    background-color: #fff;
+                                    // width: 65px;
+
+                                    &>div {
+                                        &.drop-down-icon {
+                                            &>a {
+                                                text-decoration: none;
+                                                color: rgb(207, 10, 44);
+                                            }
+
+                                            .fa {
+                                                color: rgb(207, 10, 44);
+                                                font-size: 16px;
+                                                transform: rotateX(180deg);
+                                            }
+
+                                            &>.drop-down-box {
+                                                display: block;
+                                            }
+                                        }
+
+
+                                    }
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+
+            }
+
+            // 后半部分
+            .loginList {
+                float: right;
+                width: 600px;
+
+                &>ul {
+                    float: right;
+                    height: 36px;
+
+                    &>li {
+                        padding: 0px 8px;
+                        float: left;
+                        height: 36px;
+
+                        &>div {
+                            &>a {
+                                line-height: 36px;
+                                color: #FFFFFF99;
+                                font-size: 12px;
+                                font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                                text-decoration: none;
+
+                                &:hover {
+                                    color: #fff;
+                                }
+                            }
+
+                            .fa {
+                                color: #FFFFFF99;
+                                font-size: 16px;
+                            }
+                        }
+
+                        &.end1 {
+                            &>div {
+                                &.drop-down-box1 {
+                                    float: right;
+                                    position: absolute;
+                                    width: 84px;
+                                    top: 36px;
+                                    right: 390px;
+                                    padding: 6px 0 12px 0;
+                                    text-align: center;
+                                    line-height: 32px;
+                                    background-color: #fff;
+                                    z-index: 999;
+                                    display: none;
+
+                                    &>dl {
+                                        &>dt {
+                                            &>a {
+                                                color: #000;
+                                                font-size: 12px;
+                                                font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                                                text-decoration: none;
+
+                                                &:hover {
+                                                    text-decoration: none;
+                                                    color: rgb(207, 10, 44);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &:hover {
+                                background-color: #fff;
+
+                                &>div {
+                                    &.drop-down-icon1 {
+                                        &>a {
+                                            text-decoration: none;
+                                            color: rgb(207, 10, 44);
+                                        }
+
+                                        .fa {
+                                            color: rgb(207, 10, 44);
+                                            font-size: 16px;
+                                            transform: rotateX(180deg);
+                                        }
+                                    }
+
+                                    &.drop-down-box1 {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+
+
+                        &.end2 {
+                            &>div {
+                                &.drop-down-box2 {
+                                    float: right;
+                                    position: absolute;
+                                    width: 893px;
+                                    height: 210px;
+                                    top: 36px;
+                                    right: 310px;
+                                    padding: 6px 0 12px 0;
+                                    text-align: center;
+                                    line-height: 32px;
+                                    background-color: #fff;
+                                    z-index: 999;
+                                    display: none;
+
+                                    &>div {
+                                        &>a {
+                                            color: #000;
+                                            font-size: 12px;
+                                            font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                                            text-decoration: none;
+
+                                            &:hover {
+                                                text-decoration: none;
+                                                color: rgb(207, 10, 44);
+                                            }
+                                        }
+                                    }
+
+                                    &>dl {
+                                        &>dt {
+                                            &>a {
+                                                color: #000;
+                                                font-size: 12px;
+                                                font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                                                text-decoration: none;
+
+                                                &:hover {
+                                                    text-decoration: none;
+                                                    color: rgb(207, 10, 44);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &:hover {
+                                background-color: #fff;
+
+                                &>div {
+                                    &.drop-down-icon2 {
+                                        &>a {
+                                            text-decoration: none;
+                                            color: rgb(207, 10, 44);
+                                        }
+
+                                        .fa {
+                                            color: rgb(207, 10, 44);
+                                            font-size: 16px;
+                                            transform: rotateX(180deg);
+                                        }
+                                    }
+
+                                    &.drop-down-box2 {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.end3 {
+                            &>div {
+                                &.drop-down-box3 {
+                                    float: right;
+                                    position: absolute;
+                                    width: 111px;
+                                    top: 36px;
+                                    right: 245px;
+                                    padding: 20px 0 20px 0;
+                                    ;
+                                    text-align: center;
+                                    line-height: 32px;
+                                    background-color: #fff;
+                                    z-index: 999;
+                                    display: none;
+
+                                    &>div {
+                                        &>a {
+                                            color: #000;
+                                            font-size: 12px;
+                                            font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                                            text-decoration: none;
+
+                                            &:hover {
+                                                text-decoration: none;
+                                                color: rgb(207, 10, 44);
+                                            }
+                                        }
+                                    }
+
+                                    &>dl {
+                                        &>dt {
+                                            &>a {
+                                                color: #000;
+                                                font-size: 12px;
+                                                font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                                                text-decoration: none;
+
+                                                &:hover {
+                                                    text-decoration: none;
+                                                    color: rgb(207, 10, 44);
+                                                }
+                                            }
+
+                                            &>img {
+                                                width: 90px;
+                                                height: 90px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &:hover {
+                                background-color: #fff;
+
+                                &>div {
+                                    &.drop-down-icon3 {
+                                        &>a {
+                                            text-decoration: none;
+                                            color: rgb(207, 10, 44);
+                                        }
+
+                                        .fa {
+                                            color: rgb(207, 10, 44);
+                                            font-size: 16px;
+                                            transform: rotateX(180deg);
+                                        }
+                                    }
+
+                                    &.drop-down-box3 {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.shop-cart {
+                            background-color: #424242;
+
+                            &>div {
+                                &>a {
+                                    text-decoration: none;
+                                }
+                            }
+
+                            &:hover {
+                                background-color: #fff;
+
+                                &>div {
+                                    &>i {
+                                        color: rgb(207, 10, 44);
+                                    }
+
+                                    &>a {
+                                        color: rgb(207, 10, 44);
+                                    }
+                                }
+
+                                &>.cart-drop-down-box {
+                                    display: block;
+                                }
+                            }
+
+                            &>.cart-drop-down-box {
+                                float: right;
+                                position: absolute;
+                                width: 450px;
+                                height: 150px;
+                                top: 36px;
+                                right: 155px;
+                                padding-top: 50px;
+                                padding-bottom: 50px;
+                                text-align: center;
+                                line-height: 32px;
+                                background-color: #fff;
+                                z-index: 999;
+                                display: none;
+
+                                &>.cart-empty {
+                                    &>img {
+                                        width: 80px;
+                                        height: 80px;
+                                    }
+
+                                    &>p {
+                                        color: rgb(164, 164, 164);
+                                        font-size: 14px;
+                                    }
+                                }
+
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+        // 头部第二行 搜索区域
+        &>.bottom {
+            width: 100%;
+            height: 74px;
+            line-height: 74px;
+            overflow: hidden;
+            &>.bottom-size {
+                width: 1200px;
+                margin: 0 auto;
+                line-height: 74px;
+
+                .logoArea {
+                    float: left;
+                    height: 74px;
+
+                    &>a {
+                        display: inline-block;
+                        height: 74px;
+
+                        img {
+                            width: 103px;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .jumpList {
+                    float: left;
+                    height: 74px;
+                    padding-left: 40px;
+
+                    &>a {
+                        margin: 0 0 0 35px;
+                        font-size: 16px;
+                        text-decoration: none;
+                        color: #000000;
+
+                        &:hover {
+                            color: rgb(207, 10, 44);
+                        }
+                    }
+                }
+
+                .searchArea {
+                    float: right;
+
+                    &>.searchForm {
+                        &>input {
+                            display: inline-block;
+                            height: 25px;
+                            width: 250px;
+                            box-sizing: border-box;
+                            padding: 0px 4px;
+                            border: 2px solid #A6A6A6;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        &>button {
+                            border: 1px solid;
+                            border-radius: 30px;
+                            border-color: #A6A6A6;
+                            background-color: #fff;
+                            font-size: 14px;
+                            color: #A6A6A6;
+
+                            &:focus {
+                                outline: none;
+                            }
+
+                            &:hover {
+                                color: #000;
+                            }
+                        }
+                    }
+
+                    // .searchForm {
+                    //     overflow: hidden;
+
+                    //     input {
+                    //         box-sizing: border-box;
+                    //         width: 490px;
+                    //         height: 32px;
+                    //         padding: 0px 4px;
+                    //         border: 2px solid #ea4a36;
+                    //         float: left;
+
+                    //         &:focus {
+                    //             outline: none;
+                    //         }
+                    //     }
+
+                    //     button {
+                    //         height: 32px;
+                    //         width: 68px;
+                    //         background-color: #ea4a36;
+                    //         border: none;
+                    //         color: #fff;
+                    //         float: left;
+                    //         cursor: pointer;
+
+                    //         &:focus {
+                    //             outline: none;
+                    //         }
+                    //     }
+                    // }
+                }
+            }
+        }
+    }
+
+    //二级联动-轮播图
+    &>.container {
+
+        //二级联动
+        &>.nav-list {
+            position: absolute;
+            width: 200px;
+            height: 480px;
+            top: 135px;
+            left: 165px;
+            background-color: #f9f9f9;
+            z-index: 999;
+            box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.2);
+
+            padding-top: 8px;
+            padding-bottom: 8px;
+
+            &>.nav-line {
+                width: 176px;
+                height: 40px;
+                padding-left: 24px;
+
+                &>div {
+                    &>a {
+                        line-height: 40px;
+                        float: left;
+                        color: #666;
+                        font-size: 14px;
+                        font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                        text-decoration: none;
+                    }
+
+                    &>i {
+                        line-height: 40px;
+                        float: right;
+                        margin-right: 15px;
+                        font-size: #666;
+                    }
+
+                    &>div {
+                        width: 1000px;
+                        height: 496px;
+                        background-color: #fff;
+                        position: absolute;
+                        left: 200px;
+                        top: 0px;
+                        box-shadow: 50px 0px 80px 0px rgba(0, 0, 0, 0.2);
+                        z-index: 999;
+                        display: none;
+                        overflow: hidden;
+
+                        &>div {
+                            float: left;
+                            width: 200px;
+                            padding-left: 80px;
+                            padding-top: 50px;
+                            padding-bottom: 50px;
+
+                            &>a {
+                                color: #A6A6A6;
+                                font-size: 14px;
+                                font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                                text-decoration: none;
+
+                                &:hover {
+                                    color: rgb(207, 10, 44);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    background-color: #fff;
+
+                    &>div {
+                        &>div {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+
+        //轮播图
+        &>.swiper {
+            width: 100%;
+            height: 550px;
+
+            &>.swiper-wrapper {
+                &>.swiper-slide {
+                    &>img {
+                        width: 100%;
+                        height: 550px;
+                    }
+                }
+            }
+
+            &>.swiper-button-prev {
+                margin-left: 380px;
+                border: 15px solid #A6A6A6;
+                border-radius: 100%;
+                background-color: #A6A6A6;
+                width: 24px;
+                height: 24px;
+
+                &:hover {
+                    border-color: #666;
+                    background-color: #666;
+                }
+            }
+
+            &>.swiper-button-next {
+                margin-right: 200px;
+                border: 15px solid #A6A6A6;
+                border-radius: 100%;
+                background-color: #A6A6A6;
+                width: 24px;
+                height: 24px;
+
+                &:hover {
+                    border-color: #666;
+                    background-color: #666;
+                }
+            }
+
+            --swiper-theme-color: #fff;
+            /* 设置Swiper风格 */
+            --swiper-navigation-size: 24px;
+            /* 设置按钮大小 */
+        }
+    }
+
+    //主体内容
+    &>.m-body {
+        background-color: #F1F3F5;
+        text-align: center;
+        // 图标栏部分
+        &>.muen {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            &>.fen-muen {
+                width: 1200px;
+                height: 95px;
+                margin: 0 auto;
+
+                &>.fen-muen-icon {
+                    width: 192px;
+                    height: 79px;
+                    padding: 8px 4px;
+                    float: left;
+
+                    .icon-imges {
+                        &>img {
+                            width: 48px;
+                            height: 48px;
+                        }
+                    }
+
+                    .icon-title {
+                        padding-top: 10px;
+
+                        &>a {
+                            text-decoration: none;
+                            font-size: 14px;
+                            color: #000;
+                            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+                        }
+                    }
+
+                    &:hover {
+                        .icon-imges {
+                            &>img {
+                                background-color: #DFE1E3;
+                            }
+                        }
+
+                        .icon-title {
+                            &>a {
+                                color: #7B7C7D;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // 新品推荐
+        &>.new {
+            width: 1200px;
+            height: 206px;
+            padding-bottom: 20px;
+            margin: 0 auto;
+            &>.new-image {
+                float: left;
+                padding-left: 9px;
+                &>a{
+                    width: 291px;
+                    height: 194px;
+                    &>img {
+                        width: 291px;
+                        height: 194px;
+                    }
+                }
+                &:hover{
+                    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.2);
+                }
+
+            }
+        }
+
+        //秒杀
+        &>.miao-sha{
+            width: 1200px;
+            height: 370px;
+            padding-bottom: 20px;
+            margin: 0 auto;
+            &>.miao-sha-title{
+                height: 64px;
+                line-height: 64px;
+                &>a{
+                    &>.miao-sha-name{
+                        &>p{
+                            
+                            float: left;
+                            font-size: 24px;
+                            color: #000;
+                            font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                        }
+                    }
+                    &>.miao-sha-description{
+                        color: #BDBFC0;
+                        float: right;
+                        &>p{
+                            float: left;
+                            font-size: 14px;
+                            font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                        }
+                        &>i{
+                            float: left;
+                            line-height: 64px;
+                        }
+                    }
+                }
+            }
+            &>.miao-sha-list{
+                &>.miao-sha-time{
+                    height: 306px;
+                    width: 230px;
+                    float: left;
+                    background-color: #EFE6EA;
+                    &>.miao-sha-time-img{
+                        padding-top: 60px;
+                        padding-bottom: 10px;
+                        &>img{
+                            width: 48px;
+                            height: 48px;
+                        }
+                    }
+                    &>.miao-sha-count{
+                        color: #CE0E2D;
+                        font-size: 20px;
+                        font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                        margin-bottom: 30px;
+                    }
+                    &>.weizi{
+                        color: #B4ADB0;
+                        font-size: 16px;
+                        font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                        padding-bottom: 30px;
+                    }
+                }
+                &>.miao-sha-img{
+                    height: 306px;
+                    width: 230px;
+                    margin-left:  10px;
+                    float: left;
+                    background-color: #fff;
+                    &>a{
+                        text-decoration: none;
+                        &>.miao-sha-detail-img{
+                            width: 230px;
+                            height: 183px;
+                            &>img{
+                                padding-top: 15px;
+                                width: 142px;
+                                height: 142px;
+                            }
+                        }
+                        &>.miao-sha-zi{
+                            width: 56px;
+                            height: 16px;
+                            line-height: 16px;
+                            margin: 5px auto;
+                            &>p{
+                                border-radius: 5px;
+                                background-color:#CE0E2D ;
+                                color: #fff;
+                                font-size: 12px;
+                                font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                            }
+                        }
+                        &>.chaojimiaosha-mingchen{
+                            margin: 4px auto;
+                            &>p{
+                                color: #000;
+                                font-size: 14px;
+                                font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                            }
+                        }
+                        &>.chaojimiaosha-youhui{
+                            margin: 10px auto;
+                            &>p{
+                                color: #787878;
+                                font-size: 13px;
+                                font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                            }
+                        }
+                        &>.chaojimiaosha-jge{
+                            margin: 10px auto;
+                            &>div{
+                                height: 16px;
+                                width: 100px;
+                                margin: 0 auto;
+                                &>.xian-jge{
+                                    float: left;
+                                    color: #CE0E2D;
+                                    font-size: 16px;
+                                    margin-right: 8px;
+                                    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                                }
+                                &>.yuan-jge{
+                                    float: left;
+                                    height: 16px;
+                                    padding-top: 1px;
+                                    color: #787878;
+                                    font-size: 12px;
+                                    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+                                    text-decoration: line-through;
+                                }
+                            }
+    
+                        }
+                    }
+
+                    &:hover{
+                        box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.2);
+                    }
+                }
+
+            }
+        }
+    }
+
+}
