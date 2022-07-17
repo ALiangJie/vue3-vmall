@@ -37,9 +37,9 @@ function antitime() {
     var timer01 = '';
     timer01 = d + '天' + h + '小时' + m + '分' + s + '秒';
     // document.getElementById() 获取DOM元素节点，方便向节点填入数据并显示
-    document.getElementById('daojishi');
     // 让id拥有box属性的元素节点在页面显示timer01中的内容
-    box.innerHTML = timer01;
+    document.getElementById('box').innerHTML = timer01;
 }
+
 // 开启定时器，并让其1000毫秒更新一次
 setInterval(antitime, 1000);

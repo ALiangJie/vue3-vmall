@@ -2353,7 +2353,7 @@
   height: 36px;
 }
 .outer > .header > .top .container .typeList > ul > li {
-  padding: 0px 0 0 8px;
+  padding: 0 0 0 8px;
   float: left;
   height: 36px;
 }
@@ -2365,12 +2365,12 @@
   content: '';
   width: 1.5px;
   height: 10px;
-  border-radius: 0px;
+  border-radius: 0;
   /**控制形状**/
   background-color: #414141;
   /**控制图标颜色**/
   margin-left: 2px;
-  padding-right: 0px;
+  padding-right: 0;
   /**图标与文字距离**/
 }
 .outer > .header > .top .container .typeList > ul > li > a {
@@ -2390,11 +2390,11 @@
 .outer > .header > .top .container .typeList > ul > li.end::after {
   display: inline-block;
   content: '';
-  width: 0px;
-  height: 0px;
-  border-radius: 0px;
-  margin-left: 0px;
-  padding-right: 0px;
+  width: 0;
+  height: 0;
+  border-radius: 0;
+  margin-left: 0;
+  padding-right: 0;
 }
 .outer > .header > .top .container .typeList > ul > li.end > div.drop-down-icon > a {
   line-height: 36px;
@@ -2408,7 +2408,6 @@
   font-size: 16px;
 }
 .outer > .header > .top .container .typeList > ul > li.end > div.drop-down-icon > div {
-  display: inline-block;
   position: absolute;
   width: 127px;
   left: 505px;
@@ -2453,7 +2452,7 @@
   height: 36px;
 }
 .outer > .header > .top .loginList > ul > li {
-  padding: 0px 8px;
+  padding: 0 8px;
   float: left;
   height: 36px;
 }
@@ -2696,16 +2695,15 @@
   height: 25px;
   width: 250px;
   box-sizing: border-box;
-  padding: 0px 4px;
+  padding: 0 4px;
   border: 2px solid #A6A6A6;
 }
 .outer > .header > .bottom > .bottom-size .searchArea > .searchForm > input:focus {
   outline: none;
 }
 .outer > .header > .bottom > .bottom-size .searchArea > .searchForm > button {
-  border: 1px solid;
   border-radius: 30px;
-  border-color: #A6A6A6;
+  border: 1px solid #A6A6A6;
   background-color: #fff;
   font-size: 14px;
   color: #A6A6A6;
@@ -2724,7 +2722,7 @@
   left: 165px;
   background-color: #f9f9f9;
   z-index: 999;
-  box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.2);
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -2745,7 +2743,7 @@
   line-height: 40px;
   float: right;
   margin-right: 15px;
-  font-size: #666;
+  color: #666;
 }
 .outer > .container > .nav-list > .nav-line > div > div {
   width: 1000px;
@@ -2753,8 +2751,8 @@
   background-color: #fff;
   position: absolute;
   left: 200px;
-  top: 0px;
-  box-shadow: 50px 0px 80px 0px rgba(0, 0, 0, 0.2);
+  top: 0;
+  box-shadow: 50px 0 80px 0 rgba(0, 0, 0, 0.2);
   z-index: 999;
   display: none;
   overflow: hidden;
@@ -2874,7 +2872,7 @@
   height: 194px;
 }
 .outer > .m-body > .new > .new-image:hover {
-  box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 50px 1px rgba(0, 0, 0, 0.2);
 }
 .outer > .m-body > .miao-sha {
   width: 1200px;
@@ -3004,5 +3002,5 @@
   text-decoration: line-through;
 }
 .outer > .m-body > .miao-sha > .miao-sha-list > .miao-sha-img:hover {
-  box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.2);
 }
