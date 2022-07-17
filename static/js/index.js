@@ -1,9 +1,9 @@
 //指定计时器到期时间，首先先封装函数antitime()
 function antitime() {
-    var now = new Date(); //获取当前时间
-    var to = new Date(2022, 8, 1, 0, 0, 0); //指定到期时间
+    let now = new Date(); //获取当前时间
+    let to = new Date(2022, 8, 1, 0, 0, 0); //指定到期时间
     // 然后拿到当前时间和指定时间的时间差，注意 是毫秒数
-    var deltaTime = (to - now) / 1000; //到期时间和当前时间相差的毫秒数/1000换算出总的秒数，方便后边用
+    let deltaTime = (to - now) / 1000; //到期时间和当前时间相差的毫秒数/1000换算出总的秒数，方便后边用
     // console.log(deltaTime)
     // 判断 如果时间超了，停止倒计时
     if (deltaTime <= 0) {
@@ -14,7 +14,7 @@ function antitime() {
     // 这里用到了取整数的方法，用到哪在哪除，并给其定义赋值，方便后面取用，
     // 用parseInt()取整或者Math.floor()取整,在这里用的是Math.floor()。
     // 计算天数并给其赋值
-    var d = Math.floor(deltaTime / 3600 / 24),
+    let d = Math.floor(deltaTime / 3600 / 24),
         // 计算小时并给其赋值
         h = Math.floor(deltaTime / 3600 % 24),
         // 计算分钟并给其赋值
@@ -33,12 +33,9 @@ function antitime() {
     } else if (s < 10) {
         s = '0' + s;
     }
-    // 定义一个空的字符串用来接收最后的值
-    var timer01 = '';
-    timer01 = d + '天' + h + '小时' + m + '分' + s + '秒';
     // document.getElementById() 获取DOM元素节点，方便向节点填入数据并显示
     // 让id拥有box属性的元素节点在页面显示timer01中的内容
-    document.getElementById('box').innerHTML = timer01;
+    document.getElementById('box').innerHTML = d + '天' + h + '小时' + m + '分' + s + '秒';
 }
 
 // 开启定时器，并让其1000毫秒更新一次
